@@ -5,6 +5,7 @@ export type user = {
 
 export type UserContextType = {
     authUser: any;
+    authChecked: boolean;
     login: (user: user) => Promise<void>;
     register: (user: user) => Promise<void>;
     logout: () => Promise<void>;
